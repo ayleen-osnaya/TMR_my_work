@@ -8,11 +8,11 @@ from ament_index_python.packages import get_package_share_path  # type: ignore[r
 
 
  #bollo
- 
+
 def generate_launch_description():
  
     urdf_path = os.path.join(get_package_share_path('custom_turtlebot_description'),
-                             'urdf', 'custom_turtlebot.urdf')
+                             'urdf', 'custom_turtlebot.urdf.xacro')
     
     rviz_config_path = os.path.join(get_package_share_path('custom_turtlebot_description'),
                                     'rviz', 'config.rviz')
